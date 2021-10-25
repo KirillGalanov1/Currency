@@ -1,0 +1,79 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3)
+}
+
+.window {
+  width: 300px;
+  min-height: 100px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+}
+
+.currencies {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  &__item {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding:4px 30px;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 600;
+    &.active {
+      border: 2px solid rgba(11, 156, 49, 1);
+      background-color: rgba(11, 156, 49, 0.2);
+      color: rgb(0, 120, 31);
+    }
+    &.disable {
+      border: 2px solid gray;
+      color: gray;
+    }
+  }
+}
+
+.inputField {
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 15px;
+  input {
+    border: none !important;
+    background: transparent;
+    padding: 2px 0;
+    margin-bottom: 5px;
+    &:focus {
+      outline: none;
+    }
+  }
+  span {
+    font-size: 12px;
+    color: gray;
+    min-height: 13.6px;
+  }
+}
+
+.arrows {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.btn {
+  display: block;
+  margin: 15px auto 0;
+  cursor: pointer;
+}

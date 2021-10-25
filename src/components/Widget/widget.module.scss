@@ -1,0 +1,20 @@
+.widget {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  z-index: 20;
+  bottom: 70px;
+  left: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at 65% 15%, aqua, darkblue);
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.3), -5px -10px 20px rgba(255,255,255,0.5);
+  color: white;
+  font-weight: 500;
+  text-shadow: 0 1px 0 rgba(255,255,255,0);
+  font-family: Arial, serif;
+  cursor: pointer;
+  user-select: none;
+}
